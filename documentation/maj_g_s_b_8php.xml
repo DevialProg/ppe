@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="maj_g_s_b_8php" kind="file" language="PHP">
+    <compoundname>majGSB.php</compoundname>
+    <innernamespace refid="namespace_g_s_b">GSB</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="maj_g_s_b_8php_1a74d011b76e2c78f5a59a8a8f267360f5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$moisDebut</definition>
+        <argsstring></argsstring>
+        <name>$moisDebut</name>
+        <initializer>= &apos;201609&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/gendatas/majGSB.php" line="17" column="1" bodyfile="tests/gendatas/majGSB.php" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="maj_g_s_b_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$pdo</definition>
+        <argsstring></argsstring>
+        <name>$pdo</name>
+        <initializer>= new PDO(&apos;mysql:host=localhost;dbname=gsb_frais&apos;, &apos;root&apos;, &apos;&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/gendatas/majGSB.php" line="20" column="1" bodyfile="tests/gendatas/majGSB.php" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="17" refid="maj_g_s_b_8php_1a74d011b76e2c78f5a59a8a8f267360f5" refkind="member"><highlight class="normal"><ref refid="maj_g_s_b_8php_1a74d011b76e2c78f5a59a8a8f267360f5" kindref="member">$moisDebut</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;201609&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">require<sp/></highlight><highlight class="stringliteral">&apos;./fonctions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="maj_g_s_b_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" refkind="member"><highlight class="normal"><ref refid="maj_g_s_b_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>PDO(</highlight><highlight class="stringliteral">&apos;mysql:host=localhost;dbname=gsb_frais&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;root&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="maj_g_s_b_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;query(</highlight><highlight class="stringliteral">&apos;SET<sp/>CHARACTER<sp/>SET<sp/>utf8&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">set_time_limit(0);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="fonctions_8php_1aaa271411c3446ad3c57a1429136fc1bf" kindref="member">creationFichesFrais</ref>(<ref refid="maj_g_s_b_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="fonctions_8php_1a15cec1f321241d0de7115e96cfccf67f" kindref="member">creationFraisForfait</ref>(<ref refid="maj_g_s_b_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="fonctions_8php_1ad980a8fa84e6aee8092ec6525bf1cd5a" kindref="member">creationFraisHorsForfait</ref>(<ref refid="maj_g_s_b_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="fonctions_8php_1a737fc7684b15055a48683ee1f6683b5b" kindref="member">majFicheFrais</ref>(<ref refid="maj_g_s_b_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">echo<sp/></highlight><highlight class="stringliteral">&apos;&lt;br&gt;&apos;</highlight><highlight class="normal"><sp/>.<sp/><ref refid="fonctions_8php_1a673120bc1f5b1c86025f63d160c0aa9b" kindref="member">getNbTable</ref>(<ref refid="maj_g_s_b_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>,<sp/></highlight><highlight class="stringliteral">&apos;fichefrais&apos;</highlight><highlight class="normal">)<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;<sp/>fiches<sp/>de<sp/>frais<sp/>créées<sp/>!&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">echo<sp/></highlight><highlight class="stringliteral">&apos;&lt;br&gt;&apos;</highlight><highlight class="normal"><sp/>.<sp/><ref refid="fonctions_8php_1a673120bc1f5b1c86025f63d160c0aa9b" kindref="member">getNbTable</ref>(<ref refid="maj_g_s_b_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>,<sp/></highlight><highlight class="stringliteral">&apos;lignefraisforfait&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&apos;<sp/>lignes<sp/>de<sp/>frais<sp/>au<sp/>forfait<sp/>créées<sp/>!&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">echo<sp/></highlight><highlight class="stringliteral">&apos;&lt;br&gt;&apos;</highlight><highlight class="normal"><sp/>.<sp/><ref refid="fonctions_8php_1a673120bc1f5b1c86025f63d160c0aa9b" kindref="member">getNbTable</ref>(<ref refid="maj_g_s_b_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>,<sp/></highlight><highlight class="stringliteral">&apos;lignefraishorsforfait&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&apos;<sp/>lignes<sp/>de<sp/>frais<sp/>hors<sp/>forfait<sp/>créées<sp/>!&apos;</highlight><highlight class="normal">;</highlight></codeline>
+    </programlisting>
+    <location file="tests/gendatas/majGSB.php"/>
+  </compounddef>
+</doxygen>

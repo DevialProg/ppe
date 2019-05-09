@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="c__valider_frais_8php" kind="file" language="PHP">
+    <compoundname>c_validerFrais.php</compoundname>
+    <innernamespace refid="namespace_g_s_b">GSB</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="c__valider_frais_8php_1aa698a3e72116e8e778be0e95d908ee30" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$action</definition>
+        <argsstring></argsstring>
+        <name>$action</name>
+        <initializer>= filter_input(INPUT_GET, &apos;action&apos;, FILTER_SANITIZE_STRING)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="controleurs/c_validerFrais.php" line="13" column="1" bodyfile="controleurs/c_validerFrais.php" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="c__valider_frais_8php_1a74f3c4d675e09d9e5d1c87b259cc749c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$lesVisiteurs</definition>
+        <argsstring></argsstring>
+        <name>$lesVisiteurs</name>
+        <initializer>= $pdo-&gt;<ref refid="fonctions_8php_1a2acfd2dba761253597a1ab45974a0960" kindref="member">getLesVisiteurs</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="controleurs/c_validerFrais.php" line="14" column="1" bodyfile="controleurs/c_validerFrais.php" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="c__valider_frais_8php_1a8c7bbf374a74bd19d97bfc94d086b456" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$lesMois</definition>
+        <argsstring></argsstring>
+        <name>$lesMois</name>
+        <initializer>= <ref refid="fct_8inc_8php_1acdbb5d3a3eff07e658d2d307f2a10dff" kindref="member">getLesMois</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="controleurs/c_validerFrais.php" line="15" column="1" bodyfile="controleurs/c_validerFrais.php" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="c__valider_frais_8php_1ae34d3a753520a89bd20f13c50b6054d8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>switch($action)</definition>
+        <argsstring>( $action)</argsstring>
+        <name>switch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="controleurs/c_validerFrais.php" line="17" column="1" bodyfile="controleurs/c_validerFrais.php" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="c__valider_frais_8php_1aa698a3e72116e8e778be0e95d908ee30" refkind="member"><highlight class="normal"><ref refid="c__valider_frais_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref><sp/>=<sp/>filter_input(INPUT_GET,<sp/></highlight><highlight class="stringliteral">&apos;action&apos;</highlight><highlight class="normal">,<sp/>FILTER_SANITIZE_STRING);</highlight></codeline>
+<codeline lineno="14" refid="c__valider_frais_8php_1a74f3c4d675e09d9e5d1c87b259cc749c" refkind="member"><highlight class="normal"><ref refid="c__valider_frais_8php_1a74f3c4d675e09d9e5d1c87b259cc749c" kindref="member">$lesVisiteurs</ref><sp/>=<sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;getLesVisiteurs();</highlight></codeline>
+<codeline lineno="15" refid="c__valider_frais_8php_1a8c7bbf374a74bd19d97bfc94d086b456" refkind="member"><highlight class="normal"><ref refid="c__valider_frais_8php_1a8c7bbf374a74bd19d97bfc94d086b456" kindref="member">$lesMois</ref><sp/>=<sp/><ref refid="fct_8inc_8php_1acdbb5d3a3eff07e658d2d307f2a10dff" kindref="member">getLesMois</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//gestion<sp/>de<sp/>la<sp/>vue<sp/>de<sp/>sélection<sp/>d&apos;une<sp/>fiche</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="c__valider_frais_8php_1ae34d3a753520a89bd20f13c50b6054d8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="c__valider_frais_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;selectionnerFiche&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$leVisiteur<sp/>=<sp/><ref refid="c__valider_frais_8php_1a74f3c4d675e09d9e5d1c87b259cc749c" kindref="member">$lesVisiteurs</ref>[0][</highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$leMois<sp/>=<sp/><ref refid="c__valider_frais_8php_1a8c7bbf374a74bd19d97bfc94d086b456" kindref="member">$lesMois</ref>[0][</highlight><highlight class="stringliteral">&apos;date&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;voirFicheSelect&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$leVisiteur<sp/>=<sp/>filter_input(INPUT_POST,<sp/></highlight><highlight class="stringliteral">&apos;lstVisiteurs&apos;</highlight><highlight class="normal">,<sp/>FILTER_SANITIZE_STRING);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$leMois<sp/>=<sp/>filter_input(INPUT_POST,<sp/></highlight><highlight class="stringliteral">&apos;lstMois&apos;</highlight><highlight class="normal">,<sp/>FILTER_SANITIZE_STRING);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>default<sp/>:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$leVisiteur<sp/>=<sp/>filter_input(INPUT_GET,<sp/></highlight><highlight class="stringliteral">&apos;leVisiteur&apos;</highlight><highlight class="normal">,<sp/>FILTER_SANITIZE_STRING);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$leMois<sp/>=<sp/>filter_input(INPUT_GET,<sp/></highlight><highlight class="stringliteral">&apos;leMois&apos;</highlight><highlight class="normal">,<sp/>FILTER_SANITIZE_STRING);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">include<sp/></highlight><highlight class="stringliteral">&apos;vues/v_selectionnerFiche.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//gestion<sp/>des<sp/>corrections<sp/>de<sp/>fiches</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="c__valider_frais_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;corrigerFraisForfais&apos;</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$lesFrais<sp/>=<sp/>filter_input(INPUT_POST,<sp/></highlight><highlight class="stringliteral">&apos;lesFrais&apos;</highlight><highlight class="normal">,<sp/>FILTER_DEFAULT,<sp/>FILTER_FORCE_ARRAY);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="fct_8inc_8php_1a5eaa55cf65e9070bec3a3966f5294f2a" kindref="member">lesQteFraisValides</ref>($lesFrais))<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;majFraisForfait($leVisiteur,<sp/>$leMois,<sp/>$lesFrais);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="fct_8inc_8php_1a9e79d79f26d2f6b69e7d342c6afa93b5" kindref="member">ajouterOperationEffectuee</ref>(</highlight><highlight class="stringliteral">&apos;Les<sp/>éléments<sp/>forfaitisés<sp/>ont<sp/>été<sp/>mis<sp/>à<sp/>jour.&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;vues/v_operationEffectuee.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="fct_8inc_8php_1a9ebfa4d6e8d836827ddb02455281e5c1" kindref="member">ajouterErreur</ref>(</highlight><highlight class="stringliteral">&apos;Les<sp/>valeurs<sp/>des<sp/>frais<sp/>doivent<sp/>être<sp/>numériques&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;vues/v_erreurs.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;supprimerFrais&apos;</highlight><highlight class="normal"><sp/>:<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$leFraisHorsForfait<sp/>=<sp/>filter_input(INPUT_GET,<sp/></highlight><highlight class="stringliteral">&apos;idFrais&apos;</highlight><highlight class="normal">,FILTER_SANITIZE_STRING);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;rejeterFraisHorsForfait($leFraisHorsForfait);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;reporterFrais&apos;</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$leFraisHorsForfait<sp/>=<sp/>filter_input(INPUT_GET,<sp/></highlight><highlight class="stringliteral">&apos;idFrais&apos;</highlight><highlight class="normal">,FILTER_SANITIZE_STRING);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;reporterFraisHorsForfait($leFraisHorsForfait);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//gestion<sp/>de<sp/>la<sp/>vue<sp/>des<sp/>fiches</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="c__valider_frais_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref><sp/>!=<sp/></highlight><highlight class="stringliteral">&apos;selectionnerFiche&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>$existeFiche<sp/>=<sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;existeFicheFrais($leVisiteur,<sp/>$leMois);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!$existeFiche)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="fct_8inc_8php_1a9ebfa4d6e8d836827ddb02455281e5c1" kindref="member">ajouterErreur</ref>(</highlight><highlight class="stringliteral">&apos;Pas<sp/>de<sp/>fiche<sp/>de<sp/>frais<sp/>pour<sp/>ce<sp/>visiteur<sp/>ce<sp/>mois&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;vues/v_erreurs.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1aeeb17c906a5d4d10f8628d3e440e4626" kindref="member">$lesFraisForfait</ref><sp/>=<sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;getLesFraisForfait($leVisiteur,<sp/>$leMois);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a81baafae85a3b15858b4505e425e7c9e" kindref="member">$lesFraisHorsForfait</ref><sp/>=<sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;getLesFraisHorsForfait($leVisiteur,<sp/>$leMois);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;vues/v_validerFrais.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+    </programlisting>
+    <location file="controleurs/c_validerFrais.php"/>
+  </compounddef>
+</doxygen>

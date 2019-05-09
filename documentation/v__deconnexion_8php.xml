@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="v__deconnexion_8php" kind="file" language="PHP">
+    <compoundname>v_deconnexion.php</compoundname>
+    <innernamespace refid="namespace_g_s_b">GSB</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="fct_8inc_8php_1a4d9cc75d1fa3fa8dc3739f4489183489" kindref="member">deconnecter</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">?&gt;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">&lt;div<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal">=</highlight><highlight class="stringliteral">&quot;alert<sp/>alert-info&quot;</highlight><highlight class="normal"><sp/>role=</highlight><highlight class="stringliteral">&quot;alert&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;p&gt;Vous<sp/>avez<sp/>bien<sp/>été<sp/>déconnecté<sp/>!<sp/>&lt;a<sp/>href=</highlight><highlight class="stringliteral">&quot;index.php&quot;</highlight><highlight class="normal">&gt;Cliquez<sp/>ici&lt;/a&gt;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pour<sp/>revenir<sp/>à<sp/>la<sp/>page<sp/>de<sp/>connexion.&lt;/p&gt;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">&lt;/div&gt;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">header(</highlight><highlight class="stringliteral">&quot;Refresh:<sp/>3;URL=index.php&quot;</highlight><highlight class="normal">);</highlight></codeline>
+    </programlisting>
+    <location file="vues/v_deconnexion.php"/>
+  </compounddef>
+</doxygen>

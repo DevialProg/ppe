@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_c930d313cabe95f73ea3c521f9f0bf84" kind="dir">
+    <compoundname>tests/gendatas</compoundname>
+    <innerfile refid="fonctions_8php">fonctions.php</innerfile>
+    <innerfile refid="maj_g_s_b_8php">majGSB.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tests/gendatas/"/>
+  </compounddef>
+</doxygen>

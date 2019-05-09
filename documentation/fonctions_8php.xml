@@ -1,0 +1,715 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="fonctions_8php" kind="file" language="PHP">
+    <compoundname>fonctions.php</compoundname>
+    <innernamespace refid="namespace_g_s_b">GSB</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="fonctions_8php_1a2acfd2dba761253597a1ab45974a0960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>getLesVisiteurs</definition>
+        <argsstring>($pdo)</argsstring>
+        <name>getLesVisiteurs</name>
+        <param>
+          <declname>$pdo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fonction qui retourne la liste des visiteurs</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>PDO</parametertype>
+<parametername>$pdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>instance de la classe PDO utilisée pour se connecter</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Array de visiteurs </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/gendatas/fonctions.php" line="25" column="1" bodyfile="tests/gendatas/fonctions.php" bodystart="25" bodyend="31"/>
+        <references refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" compoundref="index_8php" startline="20">$pdo</references>
+      </memberdef>
+      <memberdef kind="function" id="fonctions_8php_1a673120bc1f5b1c86025f63d160c0aa9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>getNbTable</definition>
+        <argsstring>($pdo, $table)</argsstring>
+        <name>getNbTable</name>
+        <param>
+          <declname>$pdo</declname>
+        </param>
+        <param>
+          <declname>$table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fonction générique qui retourne le nombre d&apos;enregistrements d&apos;une table</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>PDO</parametertype>
+<parametername>$pdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance de la classe PDO utilisée pour se connecter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nom de la table que l&apos;on veut utiliser</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Integer avec le nombre d&apos;enregistrements </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/gendatas/fonctions.php" line="41" column="1" bodyfile="tests/gendatas/fonctions.php" bodystart="41" bodyend="47"/>
+        <references refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" compoundref="index_8php" startline="20">$pdo</references>
+      </memberdef>
+      <memberdef kind="function" id="fonctions_8php_1a4ddda167f959ca116a8a3e6eeb90fa9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>getLesFichesFrais</definition>
+        <argsstring>($pdo)</argsstring>
+        <name>getLesFichesFrais</name>
+        <param>
+          <declname>$pdo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fonction qui retourne la liste des fiches de frais</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>PDO</parametertype>
+<parametername>$pdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>instance de la classe PDO utilisée pour se connecter</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Array de fiches de frais </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/gendatas/fonctions.php" line="56" column="1" bodyfile="tests/gendatas/fonctions.php" bodystart="56" bodyend="62"/>
+        <references refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" compoundref="index_8php" startline="20">$pdo</references>
+      </memberdef>
+      <memberdef kind="function" id="fonctions_8php_1a6308942d3ba830a09e7e94ae7711e484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>getLesIdFraisForfait</definition>
+        <argsstring>($pdo)</argsstring>
+        <name>getLesIdFraisForfait</name>
+        <param>
+          <declname>$pdo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fonction qui retourne les id des fiches de frais</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>PDO</parametertype>
+<parametername>$pdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>instance de la classe PDO utilisée pour se connecter</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Array de id de fiches de frais </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/gendatas/fonctions.php" line="71" column="1" bodyfile="tests/gendatas/fonctions.php" bodystart="71" bodyend="79"/>
+        <references refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" compoundref="index_8php" startline="20">$pdo</references>
+      </memberdef>
+      <memberdef kind="function" id="fonctions_8php_1a645aa8a245cbeb2d0d167fcc942b9b5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>getMoisSuivant</definition>
+        <argsstring>($mois)</argsstring>
+        <name>getMoisSuivant</name>
+        <param>
+          <declname>$mois</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fonction qui retourne le mois suivant un mois passé en paramètre</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$mois</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contient le mois à utiliser</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String le mois d&apos;après </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/gendatas/fonctions.php" line="88" column="1" bodyfile="tests/gendatas/fonctions.php" bodystart="88" bodyend="102"/>
+        <references refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" compoundref="c__gerer_frais_8php" startline="19">$numAnnee</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+        <references refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" compoundref="c__gerer_frais_8php" startline="20">$numMois</references>
+      </memberdef>
+      <memberdef kind="function" id="fonctions_8php_1aeeb91507878426d6313448a6bd1cad7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>getMoisPrecedent</definition>
+        <argsstring>($mois)</argsstring>
+        <name>getMoisPrecedent</name>
+        <param>
+          <declname>$mois</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fonction qui retourne le mois précédent un mois passé en paramètre</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$mois</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contient le mois à utiliser</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String le mois d&apos;avant </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/gendatas/fonctions.php" line="111" column="1" bodyfile="tests/gendatas/fonctions.php" bodystart="111" bodyend="125"/>
+        <references refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" compoundref="c__gerer_frais_8php" startline="19">$numAnnee</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+        <references refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" compoundref="c__gerer_frais_8php" startline="20">$numMois</references>
+      </memberdef>
+      <memberdef kind="function" id="fonctions_8php_1aaa271411c3446ad3c57a1429136fc1bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>creationFichesFrais</definition>
+        <argsstring>($pdo)</argsstring>
+        <name>creationFichesFrais</name>
+        <param>
+          <declname>$pdo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fonction qui crée les fiches de frais (via des INSERT SQL)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>PDO</parametertype>
+<parametername>$pdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>instance de la classe PDO utilisée pour se connecter</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/gendatas/fonctions.php" line="134" column="1" bodyfile="tests/gendatas/fonctions.php" bodystart="134" bodyend="170"/>
+        <references refid="maj_g_s_b_8php_1a74d011b76e2c78f5a59a8a8f267360f5" compoundref="maj_g_s_b_8php" startline="17">$moisDebut</references>
+        <references refid="c__valider_frais_8php_1a74f3c4d675e09d9e5d1c87b259cc749c" compoundref="c__valider_frais_8php" startline="14">$lesVisiteurs</references>
+        <references refid="fonctions_8php_1a2acfd2dba761253597a1ab45974a0960" compoundref="fonctions_8php" startline="25" endline="31">getLesVisiteurs</references>
+        <references refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" compoundref="index_8php" startline="20">$pdo</references>
+        <references refid="fonctions_8php_1ac6b26dbc90d7a5ec71b0585ee0786a41" compoundref="fonctions_8php" startline="331" endline="339">getMois</references>
+        <references refid="fonctions_8php_1aeeb91507878426d6313448a6bd1cad7c" compoundref="fonctions_8php" startline="111" endline="125">getMoisPrecedent</references>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+        <references refid="fonctions_8php_1a645aa8a245cbeb2d0d167fcc942b9b5c" compoundref="fonctions_8php" startline="88" endline="102">getMoisSuivant</references>
+        <references refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" compoundref="c__gerer_frais_8php" startline="19">$numAnnee</references>
+        <references refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" compoundref="c__gerer_frais_8php" startline="20">$numMois</references>
+      </memberdef>
+      <memberdef kind="function" id="fonctions_8php_1a15cec1f321241d0de7115e96cfccf67f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>creationFraisForfait</definition>
+        <argsstring>($pdo)</argsstring>
+        <name>creationFraisForfait</name>
+        <param>
+          <declname>$pdo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fonction qui crée des lignes de frais au forfait (via des INSERT SQL)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>PDO</parametertype>
+<parametername>$pdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>instance de la classe PDO utilisée pour se connecter</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/gendatas/fonctions.php" line="179" column="1" bodyfile="tests/gendatas/fonctions.php" bodystart="179" bodyend="199"/>
+        <references refid="fonctions_8php_1a4ddda167f959ca116a8a3e6eeb90fa9e" compoundref="fonctions_8php" startline="56" endline="62">getLesFichesFrais</references>
+        <references refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" compoundref="index_8php" startline="20">$pdo</references>
+        <references refid="fonctions_8php_1a6308942d3ba830a09e7e94ae7711e484" compoundref="fonctions_8php" startline="71" endline="79">getLesIdFraisForfait</references>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+      </memberdef>
+      <memberdef kind="function" id="fonctions_8php_1ae0eddc9c28d0ed7a68aa28fa98a6f214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>getDesFraisHorsForfait</definition>
+        <argsstring>()</argsstring>
+        <name>getDesFraisHorsForfait</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fonction qui retourne des exmples de frais hors forfait pour de la génération aléatoire</para>
+<para><simplesect kind="return"><para>Array d&apos;exemples de frais hors forfait </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/gendatas/fonctions.php" line="207" column="1" bodyfile="tests/gendatas/fonctions.php" bodystart="207" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="fonctions_8php_1ad1a28b1457da19e4210dfa8869d1c874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>updateMdpVisiteur</definition>
+        <argsstring>($pdo)</argsstring>
+        <name>updateMdpVisiteur</name>
+        <param>
+          <declname>$pdo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fonction qui met à jour les mots de passe des visisteurs avec des mots de pass aléatoire</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>PDO</parametertype>
+<parametername>$pdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>instance de la classe PDO utilisée pour se connecter</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/gendatas/fonctions.php" line="266" column="1" bodyfile="tests/gendatas/fonctions.php" bodystart="266" bodyend="282"/>
+        <references refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" compoundref="index_8php" startline="20">$pdo</references>
+      </memberdef>
+      <memberdef kind="function" id="fonctions_8php_1ad980a8fa84e6aee8092ec6525bf1cd5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>creationFraisHorsForfait</definition>
+        <argsstring>($pdo)</argsstring>
+        <name>creationFraisHorsForfait</name>
+        <param>
+          <declname>$pdo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fonction qui crée des lignes de frais hors forfait (via des INSERT SQL)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>PDO</parametertype>
+<parametername>$pdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>instance de la classe PDO utilisée pour se connecter</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/gendatas/fonctions.php" line="291" column="1" bodyfile="tests/gendatas/fonctions.php" bodystart="291" bodyend="321"/>
+        <references refid="fonctions_8php_1ae0eddc9c28d0ed7a68aa28fa98a6f214" compoundref="fonctions_8php" startline="207" endline="256">getDesFraisHorsForfait</references>
+        <references refid="fonctions_8php_1a4ddda167f959ca116a8a3e6eeb90fa9e" compoundref="fonctions_8php" startline="56" endline="62">getLesFichesFrais</references>
+        <references refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" compoundref="index_8php" startline="20">$pdo</references>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+        <references refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" compoundref="c__gerer_frais_8php" startline="19">$numAnnee</references>
+        <references refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" compoundref="c__gerer_frais_8php" startline="20">$numMois</references>
+      </memberdef>
+      <memberdef kind="function" id="fonctions_8php_1ac6b26dbc90d7a5ec71b0585ee0786a41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>getMois</definition>
+        <argsstring>($date)</argsstring>
+        <name>getMois</name>
+        <param>
+          <declname>$date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fonction qui retourne le mois (au format ID <ref refid="namespace_g_s_b" kindref="compound">GSB</ref> : aaaamm) à partir d&apos;une date passée en paramètre</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$date</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Date à utiliser pour extraire le mois</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String avec le mois au format aaaamm </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/gendatas/fonctions.php" line="331" column="1" bodyfile="tests/gendatas/fonctions.php" bodystart="331" bodyend="339"/>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+      </memberdef>
+      <memberdef kind="function" id="fonctions_8php_1a737fc7684b15055a48683ee1f6683b5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>majFicheFrais</definition>
+        <argsstring>($pdo)</argsstring>
+        <name>majFicheFrais</name>
+        <param>
+          <declname>$pdo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fonction qui met à jour les montants des fiches de frais (via des UPDATE SQL)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>PDO</parametertype>
+<parametername>$pdo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>instance de la classe PDO utilisée pour se connecter</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/gendatas/fonctions.php" line="348" column="1" bodyfile="tests/gendatas/fonctions.php" bodystart="348" bodyend="380"/>
+        <references refid="fonctions_8php_1a4ddda167f959ca116a8a3e6eeb90fa9e" compoundref="fonctions_8php" startline="56" endline="62">getLesFichesFrais</references>
+        <references refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" compoundref="index_8php" startline="20">$pdo</references>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="fonctions_8php_1a2acfd2dba761253597a1ab45974a0960" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fonctions_8php_1a2acfd2dba761253597a1ab45974a0960" kindref="member">getLesVisiteurs</ref>(<ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>$req<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;select<sp/>*<sp/>from<sp/>visiteur&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>$res<sp/>=<sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;query($req);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>$lesLignes<sp/>=<sp/>$res-&gt;fetchAll();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$lesLignes;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="fonctions_8php_1a673120bc1f5b1c86025f63d160c0aa9b" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fonctions_8php_1a673120bc1f5b1c86025f63d160c0aa9b" kindref="member">getNbTable</ref>(<ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>,<sp/>$table)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>$req<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;select<sp/>count(*)<sp/>from<sp/>&apos;</highlight><highlight class="normal"><sp/>.<sp/>$table;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>$res<sp/>=<sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;query($req);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>$nbLignes<sp/>=<sp/>$res-&gt;fetch();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$nbLignes[0];</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="fonctions_8php_1a4ddda167f959ca116a8a3e6eeb90fa9e" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fonctions_8php_1a4ddda167f959ca116a8a3e6eeb90fa9e" kindref="member">getLesFichesFrais</ref>(<ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>$req<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;select<sp/>*<sp/>from<sp/>fichefrais&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>$res<sp/>=<sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;query($req);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>$lesLignes<sp/>=<sp/>$res-&gt;fetchAll();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$lesLignes;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="fonctions_8php_1a6308942d3ba830a09e7e94ae7711e484" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fonctions_8php_1a6308942d3ba830a09e7e94ae7711e484" kindref="member">getLesIdFraisForfait</ref>(<ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>$req<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;select<sp/>fraisforfait.id<sp/>as<sp/>id<sp/>&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&apos;from<sp/>fraisforfait<sp/>&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&apos;order<sp/>by<sp/>fraisforfait.id&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>$res<sp/>=<sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;query($req);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>$lesLignes<sp/>=<sp/>$res-&gt;fetchAll();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$lesLignes;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="fonctions_8php_1a645aa8a245cbeb2d0d167fcc942b9b5c" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fonctions_8php_1a645aa8a245cbeb2d0d167fcc942b9b5c" kindref="member">getMoisSuivant</ref>(<ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" kindref="member">$numAnnee</ref><sp/>=<sp/>substr(<ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>,<sp/>0,<sp/>4);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref><sp/>=<sp/>substr(<ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>,<sp/>4,<sp/>2);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&apos;12&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;01&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" kindref="member">$numAnnee</ref>++;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref>++;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strlen(<ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref>)<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>.<sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" kindref="member">$numAnnee</ref><sp/>.<sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="fonctions_8php_1aeeb91507878426d6313448a6bd1cad7c" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fonctions_8php_1aeeb91507878426d6313448a6bd1cad7c" kindref="member">getMoisPrecedent</ref>(<ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" kindref="member">$numAnnee</ref><sp/>=<sp/>substr(<ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>,<sp/>0,<sp/>4);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref><sp/>=<sp/>substr(<ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>,<sp/>4,<sp/>2);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&apos;01&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;12&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" kindref="member">$numAnnee</ref>--;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref>--;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strlen(<ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref>)<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>.<sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" kindref="member">$numAnnee</ref><sp/>.<sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="fonctions_8php_1aaa271411c3446ad3c57a1429136fc1bf" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fonctions_8php_1aaa271411c3446ad3c57a1429136fc1bf" kindref="member">creationFichesFrais</ref>(<ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>global<sp/><ref refid="maj_g_s_b_8php_1a74d011b76e2c78f5a59a8a8f267360f5" kindref="member">$moisDebut</ref>;<sp/></highlight><highlight class="comment">//<sp/>valeur<sp/>dans<sp/>majGSB.php</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="c__valider_frais_8php_1a74f3c4d675e09d9e5d1c87b259cc749c" kindref="member">$lesVisiteurs</ref><sp/>=<sp/><ref refid="fonctions_8php_1a2acfd2dba761253597a1ab45974a0960" kindref="member">getLesVisiteurs</ref>(<ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>$moisActuel<sp/>=<sp/><ref refid="fonctions_8php_1ac6b26dbc90d7a5ec71b0585ee0786a41" kindref="member">getMois</ref>(date(</highlight><highlight class="stringliteral">&apos;d/m/Y&apos;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>$moisFin<sp/>=<sp/><ref refid="fonctions_8php_1aeeb91507878426d6313448a6bd1cad7c" kindref="member">getMoisPrecedent</ref>($moisActuel);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(<ref refid="c__valider_frais_8php_1a74f3c4d675e09d9e5d1c87b259cc749c" kindref="member">$lesVisiteurs</ref><sp/>as<sp/>$unVisiteur)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$moisCourant<sp/>=<sp/>$moisFin;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" kindref="member">$idVisiteur</ref><sp/>=<sp/>$unVisiteur[</highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$n<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>($moisCourant<sp/>&gt;=<sp/><ref refid="maj_g_s_b_8php_1a74d011b76e2c78f5a59a8a8f267360f5" kindref="member">$moisDebut</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($n<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$etat<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;CR&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$moisModif<sp/>=<sp/>$moisCourant;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($n<sp/>==<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$etat<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;VA&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$moisModif<sp/>=<sp/><ref refid="fonctions_8php_1a645aa8a245cbeb2d0d167fcc942b9b5c" kindref="member">getMoisSuivant</ref>($moisCourant);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$etat<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;RB&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$moisModif<sp/>=<sp/><ref refid="fonctions_8php_1a645aa8a245cbeb2d0d167fcc942b9b5c" kindref="member">getMoisSuivant</ref>(<ref refid="fonctions_8php_1a645aa8a245cbeb2d0d167fcc942b9b5c" kindref="member">getMoisSuivant</ref>($moisCourant));</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" kindref="member">$numAnnee</ref><sp/>=<sp/>substr($moisModif,<sp/>0,<sp/>4);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref><sp/>=<sp/>substr($moisModif,<sp/>4,<sp/>2);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dateModif<sp/>=<sp/><ref refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" kindref="member">$numAnnee</ref><sp/>.<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal"><sp/>.<sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref><sp/>.<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal"><sp/>.<sp/>rand(1,<sp/>8);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$nbJustificatifs<sp/>=<sp/>rand(0,<sp/>12);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$req<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;insert<sp/>into<sp/>fichefrais(idvisiteur,mois,nbjustificatifs,&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&apos;montantvalide,datemodif,idetat)<sp/>&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&quot;values<sp/>(&apos;$idVisiteur&apos;,&apos;$moisCourant&apos;,$nbJustificatifs,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&quot;0,&apos;$dateModif&apos;,&apos;$etat&apos;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;exec($req);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$moisCourant<sp/>=<sp/><ref refid="fonctions_8php_1aeeb91507878426d6313448a6bd1cad7c" kindref="member">getMoisPrecedent</ref>($moisCourant);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$n++;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="fonctions_8php_1a15cec1f321241d0de7115e96cfccf67f" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fonctions_8php_1a15cec1f321241d0de7115e96cfccf67f" kindref="member">creationFraisForfait</ref>(<ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>$lesFichesFrais<sp/>=<sp/><ref refid="fonctions_8php_1a4ddda167f959ca116a8a3e6eeb90fa9e" kindref="member">getLesFichesFrais</ref>(<ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>$lesIdFraisForfait<sp/>=<sp/><ref refid="fonctions_8php_1a6308942d3ba830a09e7e94ae7711e484" kindref="member">getLesIdFraisForfait</ref>(<ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>($lesFichesFrais<sp/>as<sp/>$uneFicheFrais)<sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" kindref="member">$idVisiteur</ref><sp/>=<sp/>$uneFicheFrais[</highlight><highlight class="stringliteral">&apos;idvisiteur&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref><sp/>=<sp/>$uneFicheFrais[</highlight><highlight class="stringliteral">&apos;mois&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>($lesIdFraisForfait<sp/>as<sp/>$unIdFraisForfait)<sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$idFraisForfait<sp/>=<sp/>$unIdFraisForfait[</highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(substr($idFraisForfait,<sp/>0,<sp/>1)<sp/>==<sp/></highlight><highlight class="charliteral">&apos;K&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$quantite<sp/>=<sp/>rand(300,<sp/>1000);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$quantite<sp/>=<sp/>rand(2,<sp/>20);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$req<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;insert<sp/>into<sp/>lignefraisforfait(idvisiteur,mois,&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&apos;idfraisforfait,quantite)<sp/>&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&quot;values(&apos;$idVisiteur&apos;,&apos;$mois&apos;,&apos;$idFraisForfait&apos;,$quantite);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;exec($req);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="fonctions_8php_1ae0eddc9c28d0ed7a68aa28fa98a6f214" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fonctions_8php_1ae0eddc9c28d0ed7a68aa28fa98a6f214" kindref="member">getDesFraisHorsForfait</ref>()</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>$tab<sp/>=<sp/>array(</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>=&gt;<sp/>array(</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;lib&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/></highlight><highlight class="stringliteral">&apos;Repas<sp/>avec<sp/>praticien&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;min&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>30,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;max&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>50),</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/>=&gt;<sp/>array(</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;lib&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/></highlight><highlight class="stringliteral">&apos;Achat<sp/>de<sp/>matériel<sp/>de<sp/>papèterie&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;min&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>10,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;max&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>50),</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/>=&gt;<sp/>array(</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;lib&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/></highlight><highlight class="stringliteral">&apos;Taxi&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;min&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>20,</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;max&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>80),</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4<sp/>=&gt;<sp/>array(</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;lib&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/></highlight><highlight class="stringliteral">&quot;Achat<sp/>d&apos;espace<sp/>publicitaire&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;min&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>20,</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;max&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>150),</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5<sp/>=&gt;<sp/>array(</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;lib&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/></highlight><highlight class="stringliteral">&apos;Location<sp/>salle<sp/>conférence&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;min&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>120,</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;max&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>650),</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6<sp/>=&gt;<sp/>array(</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;lib&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/></highlight><highlight class="stringliteral">&apos;Voyage<sp/>SNCF&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;min&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>30,</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;max&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>150),</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7<sp/>=&gt;<sp/>array(</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;lib&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/></highlight><highlight class="stringliteral">&apos;Traiteur,<sp/>alimentation,<sp/>boisson&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;min&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>25,</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;max&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>450),</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8<sp/>=&gt;<sp/>array(</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;lib&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/></highlight><highlight class="stringliteral">&apos;Rémunération<sp/>intervenant/spécialiste&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;min&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>250,</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;max&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>1200),</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9<sp/>=&gt;<sp/>array(</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;lib&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/></highlight><highlight class="stringliteral">&apos;Location<sp/>équipement<sp/>vidéo/sonore&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;min&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>100,</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;max&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>850),</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10<sp/>=&gt;<sp/>array(</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;lib&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/></highlight><highlight class="stringliteral">&apos;Location<sp/>véhicule&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;min&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>25,</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;max&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>450),</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>11<sp/>=&gt;<sp/>array(</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;lib&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/></highlight><highlight class="stringliteral">&apos;Frais<sp/>vestimentaire/représentation&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;min&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>25,</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;max&apos;</highlight><highlight class="normal"><sp/>=&gt;<sp/>450)</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$tab;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266" refid="fonctions_8php_1ad1a28b1457da19e4210dfa8869d1c874" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fonctions_8php_1ad1a28b1457da19e4210dfa8869d1c874" kindref="member">updateMdpVisiteur</ref>(<ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>)</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>$req<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;select<sp/>*<sp/>from<sp/>visiteur&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>$res<sp/>=<sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;query($req);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>$lesLignes<sp/>=<sp/>$res-&gt;fetchAll();</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>$lettres<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;azertyuiopqsdfghjkmwxcvbn123456789&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>($lesLignes<sp/>as<sp/>$unVisiteur)<sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$mdp<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$id<sp/>=<sp/>$unVisiteur[</highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>($i<sp/>=<sp/>1;<sp/>$i<sp/>&lt;=<sp/>5;<sp/>$i++)<sp/>{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$uneLettrehasard<sp/>=<sp/>substr($lettres,<sp/>rand(33,<sp/>1),<sp/>1);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$mdp<sp/>=<sp/>$mdp<sp/>.<sp/>$uneLettrehasard;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$req<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;update<sp/>visiteur<sp/>set<sp/>mdp<sp/>=&apos;$mdp&apos;<sp/>where<sp/>visiteur.id<sp/>=&apos;$id&apos;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;exec($req);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291" refid="fonctions_8php_1ad980a8fa84e6aee8092ec6525bf1cd5a" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fonctions_8php_1ad980a8fa84e6aee8092ec6525bf1cd5a" kindref="member">creationFraisHorsForfait</ref>(<ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>)</highlight></codeline>
+<codeline lineno="292"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>$desFrais<sp/>=<sp/><ref refid="fonctions_8php_1ae0eddc9c28d0ed7a68aa28fa98a6f214" kindref="member">getDesFraisHorsForfait</ref>();</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>$lesFichesFrais<sp/>=<sp/><ref refid="fonctions_8php_1a4ddda167f959ca116a8a3e6eeb90fa9e" kindref="member">getLesFichesFrais</ref>(<ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>($lesFichesFrais<sp/>as<sp/>$uneFicheFrais)<sp/>{</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" kindref="member">$idVisiteur</ref><sp/>=<sp/>$uneFicheFrais[</highlight><highlight class="stringliteral">&apos;idvisiteur&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref><sp/>=<sp/>$uneFicheFrais[</highlight><highlight class="stringliteral">&apos;mois&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$nbFrais<sp/>=<sp/>rand(0,<sp/>5);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>($i<sp/>=<sp/>0;<sp/>$i<sp/>&lt;=<sp/>$nbFrais;<sp/>$i++)<sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$hasardNumfrais<sp/>=<sp/>rand(1,<sp/>count($desFrais));</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$frais<sp/>=<sp/>$desFrais[$hasardNumfrais];</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$lib<sp/>=<sp/>$frais[</highlight><highlight class="stringliteral">&apos;lib&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$min<sp/>=<sp/>$frais[</highlight><highlight class="stringliteral">&apos;min&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$max<sp/>=<sp/>$frais[</highlight><highlight class="stringliteral">&apos;max&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$hasardMontant<sp/>=<sp/>rand($min,<sp/>$max);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" kindref="member">$numAnnee</ref><sp/>=<sp/>substr(<ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>,<sp/>0,<sp/>4);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref><sp/>=<sp/>substr(<ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>,<sp/>4,<sp/>2);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$hasardJour<sp/>=<sp/>rand(1,<sp/>28);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strlen($hasardJour)<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$hasardJour<sp/>=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>.<sp/>$hasardJour;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$hasardMois<sp/>=<sp/><ref refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" kindref="member">$numAnnee</ref><sp/>.<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal"><sp/>.<sp/><ref refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" kindref="member">$numMois</ref><sp/>.<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal"><sp/>.<sp/>$hasardJour;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$req<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;insert<sp/>into<sp/>lignefraishorsforfait(idvisiteur,mois,libelle,&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&apos;date,montant)<sp/>&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&quot;values(&apos;$idVisiteur&apos;,&apos;$mois&apos;,&apos;$lib&apos;,&apos;$hasardMois&apos;,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&quot;$hasardMontant);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;exec($req);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331" refid="fonctions_8php_1ac6b26dbc90d7a5ec71b0585ee0786a41" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fonctions_8php_1ac6b26dbc90d7a5ec71b0585ee0786a41" kindref="member">getMois</ref>($date)</highlight></codeline>
+<codeline lineno="332"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>@list($jour,<sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>,<sp/>$annee)<sp/>=<sp/>explode(</highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">,<sp/>$date);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>unset($jour);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strlen(<ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>)<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>.<sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$annee<sp/>.<sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348" refid="fonctions_8php_1a737fc7684b15055a48683ee1f6683b5b" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fonctions_8php_1a737fc7684b15055a48683ee1f6683b5b" kindref="member">majFicheFrais</ref>(<ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>)</highlight></codeline>
+<codeline lineno="349"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>$lesFichesFrais<sp/>=<sp/><ref refid="fonctions_8php_1a4ddda167f959ca116a8a3e6eeb90fa9e" kindref="member">getLesFichesFrais</ref>(<ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>($lesFichesFrais<sp/>as<sp/>$uneFicheFrais)<sp/>{</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" kindref="member">$idVisiteur</ref><sp/>=<sp/>$uneFicheFrais[</highlight><highlight class="stringliteral">&apos;idvisiteur&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref><sp/>=<sp/>$uneFicheFrais[</highlight><highlight class="stringliteral">&apos;mois&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$req<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;select<sp/>sum(montant)<sp/>as<sp/>cumul<sp/>from<sp/>lignefraishorsforfait<sp/>&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&quot;where<sp/>lignefraishorsforfait.idvisiteur<sp/>=<sp/>&apos;$idVisiteur&apos;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&quot;and<sp/>lignefraishorsforfait.mois<sp/>=<sp/>&apos;$mois&apos;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$res<sp/>=<sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;query($req);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$ligne<sp/>=<sp/>$res-&gt;fetch();</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$cumulMontantHF<sp/>=<sp/>$ligne[</highlight><highlight class="stringliteral">&apos;cumul&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$req<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;select<sp/>sum(lignefraisforfait.quantite<sp/>*<sp/>fraisforfait.montant)<sp/>&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&apos;as<sp/>cumul<sp/>&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&apos;from<sp/>lignefraisforfait,<sp/>fraisforfait<sp/>&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&apos;where<sp/>lignefraisforfait.idfraisforfait<sp/>=<sp/>fraisforfait.id<sp/>&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&quot;and<sp/>lignefraisforfait.idvisiteur<sp/>=<sp/>&apos;$idVisiteur&apos;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&quot;and<sp/>lignefraisforfait.mois<sp/>=<sp/>&apos;$mois&apos;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$res<sp/>=<sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;query($req);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$ligne<sp/>=<sp/>$res-&gt;fetch();</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$cumulMontantForfait<sp/>=<sp/>$ligne[</highlight><highlight class="stringliteral">&apos;cumul&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$montantEngage<sp/>=<sp/>$cumulMontantHF<sp/>+<sp/>$cumulMontantForfait;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$etat<sp/>=<sp/>$uneFicheFrais[</highlight><highlight class="stringliteral">&apos;idetat&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($etat<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;CR&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$montantValide<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$montantValide<sp/>=<sp/>$montantEngage<sp/>*<sp/>rand(80,<sp/>100)<sp/>/<sp/>100;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$req<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;update<sp/>fichefrais<sp/>set<sp/>montantvalide<sp/>=<sp/>$montantValide<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<sp/></highlight><highlight class="stringliteral">&quot;where<sp/>idvisiteur<sp/>=<sp/>&apos;$idVisiteur&apos;<sp/>and<sp/>mois<sp/>=<sp/>&apos;$mois&apos;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;exec($req);</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="380"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="tests/gendatas/fonctions.php"/>
+  </compounddef>
+</doxygen>

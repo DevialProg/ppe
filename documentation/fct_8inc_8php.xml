@@ -1,0 +1,694 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="fct_8inc_8php" kind="file" language="PHP">
+    <compoundname>fct.inc.php</compoundname>
+    <innernamespace refid="namespace_g_s_b">GSB</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="fct_8inc_8php_1a80ca5386d53e29b2b310cb83191a9b31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>estConnecte</definition>
+        <argsstring>()</argsstring>
+        <name>estConnecte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Teste si un quelconque visiteur est connecté</para>
+<para><simplesect kind="return"><para>vrai ou faux </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="22" column="1" bodyfile="includes/fct.inc.php" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1a5194a3722b067299a4813f7432ab6c7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>estComptable</definition>
+        <argsstring>()</argsstring>
+        <name>estComptable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indique si le visiteur connecté est un comptable ou non</para>
+<para><simplesect kind="return"><para>boolean vrai si un utilisateur est connecté et est comptable faux sinon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="31" column="1" bodyfile="includes/fct.inc.php" bodystart="31" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1af3f8f0c3b1455210ffda1ed8b9cb8aff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>connecter</definition>
+        <argsstring>($idVisiteur, $nom, $prenom, $comptable)</argsstring>
+        <name>connecter</name>
+        <param>
+          <declname>$idVisiteur</declname>
+        </param>
+        <param>
+          <declname>$nom</declname>
+        </param>
+        <param>
+          <declname>$prenom</declname>
+        </param>
+        <param>
+          <declname>$comptable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enregistre dans une variable session les infos d&apos;un visiteur</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idVisiteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du visiteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$nom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nom du visiteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$prenom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prénom du visiteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>Boolean</parametertype>
+<parametername>$comptable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indique si l&apos;utilisateur est un comptable ou non</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="53" column="1" bodyfile="includes/fct.inc.php" bodystart="53" bodyend="59"/>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1a4d9cc75d1fa3fa8dc3739f4489183489" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>deconnecter</definition>
+        <argsstring>()</argsstring>
+        <name>deconnecter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Détruit la session active</para>
+<para><simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="66" column="1" bodyfile="includes/fct.inc.php" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1ab9cb222b5275222fe9adc11dbbd997a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dateFrancaisVersAnglais</definition>
+        <argsstring>($maDate)</argsstring>
+        <name>dateFrancaisVersAnglais</name>
+        <param>
+          <declname>$maDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transforme une date au format français jj/mm/aaaa vers le format anglais aaaa-mm-jj</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$maDate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>au format jj/mm/aaaa</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Date au format anglais aaaa-mm-jj </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="79" column="1" bodyfile="includes/fct.inc.php" bodystart="79" bodyend="83"/>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1a6e0d8dd85362ba68b76db41db62e2499" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dateAnglaisVersFrancais</definition>
+        <argsstring>($maDate)</argsstring>
+        <name>dateAnglaisVersFrancais</name>
+        <param>
+          <declname>$maDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transforme une date au format format anglais aaaa-mm-jj vers le format français jj/mm/aaaa</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$maDate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>au format aaaa-mm-jj</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Date au format format français jj/mm/aaaa </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="93" column="1" bodyfile="includes/fct.inc.php" bodystart="93" bodyend="98"/>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1ac6b26dbc90d7a5ec71b0585ee0786a41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>getMois</definition>
+        <argsstring>($date)</argsstring>
+        <name>getMois</name>
+        <param>
+          <declname>$date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retourne le mois au format aaaamm selon le jour dans le mois</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$date</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>au format jj/mm/aaaa</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String Mois au format aaaamm </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="107" column="1" bodyfile="includes/fct.inc.php" bodystart="107" bodyend="115"/>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1a5891ac42bd25b5bb5a9427174f8eb15f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>estEntierPositif</definition>
+        <argsstring>($valeur)</argsstring>
+        <name>estEntierPositif</name>
+        <param>
+          <declname>$valeur</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indique si une valeur est un entier positif ou nul</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>Integer</parametertype>
+<parametername>$valeur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valeur</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean vrai ou faux </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="126" column="1" bodyfile="includes/fct.inc.php" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1a464609600321021614adc67242caff02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>estTableauEntiers</definition>
+        <argsstring>($tabEntiers)</argsstring>
+        <name>estTableauEntiers</name>
+        <param>
+          <declname>$tabEntiers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indique si un tableau de valeurs est constitué d&apos;entiers positifs ou nuls</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>Array</parametertype>
+<parametername>$tabEntiers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Un tableau d&apos;entier</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean vrai ou faux </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="138" column="1" bodyfile="includes/fct.inc.php" bodystart="138" bodyend="147"/>
+        <references refid="fct_8inc_8php_1a5891ac42bd25b5bb5a9427174f8eb15f" compoundref="fct_8inc_8php" startline="126" endline="129">estEntierPositif</references>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1aa58c871e5f6cd7d51b1e8b88843f7fb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>estDateDepassee</definition>
+        <argsstring>($dateTestee)</argsstring>
+        <name>estDateDepassee</name>
+        <param>
+          <declname>$dateTestee</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vérifie si une date est inférieure d&apos;un an à la date actuelle</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$dateTestee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Date à tester</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean vrai ou faux </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="156" column="1" bodyfile="includes/fct.inc.php" bodystart="156" bodyend="164"/>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1a7fa9e2b0f911f71f0dc3857201676f6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>estDateValide</definition>
+        <argsstring>($date)</argsstring>
+        <name>estDateValide</name>
+        <param>
+          <declname>$date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vérifie la validité du format d&apos;une date française jj/mm/aaaa</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$date</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Date à tester</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean vrai ou faux </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="173" column="1" bodyfile="includes/fct.inc.php" bodystart="173" bodyend="189"/>
+        <references refid="fct_8inc_8php_1a464609600321021614adc67242caff02" compoundref="fct_8inc_8php" startline="138" endline="147">estTableauEntiers</references>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1a5eaa55cf65e9070bec3a3966f5294f2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lesQteFraisValides</definition>
+        <argsstring>($lesFrais)</argsstring>
+        <name>lesQteFraisValides</name>
+        <param>
+          <declname>$lesFrais</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vérifie que le tableau de frais ne contient que des valeurs numériques</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>Array</parametertype>
+<parametername>$lesFrais</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tableau d&apos;entier</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean vrai ou faux </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="198" column="1" bodyfile="includes/fct.inc.php" bodystart="198" bodyend="201"/>
+        <references refid="fct_8inc_8php_1a464609600321021614adc67242caff02" compoundref="fct_8inc_8php" startline="138" endline="147">estTableauEntiers</references>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1a38c2c9e2e53aebdd24c6cce15666893f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>valideInfosFrais</definition>
+        <argsstring>($dateFrais, $libelle, $montant)</argsstring>
+        <name>valideInfosFrais</name>
+        <param>
+          <declname>$dateFrais</declname>
+        </param>
+        <param>
+          <declname>$libelle</declname>
+        </param>
+        <param>
+          <declname>$montant</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vérifie la validité des trois arguments : la date, le libellé du frais et le montant</para>
+<para>Des message d&apos;erreurs sont ajoutés au tableau des erreurs</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$dateFrais</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Date des frais </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$libelle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Libellé des frais </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>Float</parametertype>
+<parametername>$montant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Montant des frais</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="215" column="1" bodyfile="includes/fct.inc.php" bodystart="215" bodyend="238"/>
+        <references refid="fct_8inc_8php_1a9ebfa4d6e8d836827ddb02455281e5c1" compoundref="fct_8inc_8php" startline="247" endline="253">ajouterErreur</references>
+        <references refid="fct_8inc_8php_1aa58c871e5f6cd7d51b1e8b88843f7fb1" compoundref="fct_8inc_8php" startline="156" endline="164">estDateDepassee</references>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1a9ebfa4d6e8d836827ddb02455281e5c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ajouterErreur</definition>
+        <argsstring>($msg)</argsstring>
+        <name>ajouterErreur</name>
+        <param>
+          <declname>$msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ajoute le libellé d&apos;une erreur au tableau des erreurs</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Libellé de l&apos;erreur</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="247" column="1" bodyfile="includes/fct.inc.php" bodystart="247" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1a9e79d79f26d2f6b69e7d342c6afa93b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ajouterOperationEffectuee</definition>
+        <argsstring>($msg)</argsstring>
+        <name>ajouterOperationEffectuee</name>
+        <param>
+          <declname>$msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ajoute le libellé d&apos;une opération réussie au tableau des opérations effectuées</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Libellé de l&apos;erreur</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="261" column="1" bodyfile="includes/fct.inc.php" bodystart="261" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1abc3600d37e9484937ea976542eabec4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nbErreurs</definition>
+        <argsstring>()</argsstring>
+        <name>nbErreurs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retoune le nombre de lignes du tableau des erreurs</para>
+<para><simplesect kind="return"><para>Integer le nombre d&apos;erreurs </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="274" column="1" bodyfile="includes/fct.inc.php" bodystart="274" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="fct_8inc_8php_1acdbb5d3a3eff07e658d2d307f2a10dff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>getLesMois</definition>
+        <argsstring>()</argsstring>
+        <name>getLesMois</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retourne la liste des mois des 3 dernières années</para>
+<para><simplesect kind="return"><para>la liste des mois de 3 dernières années (&apos;mois&apos; : mm , &apos;annee&apos; : aaaa , &apos;date&apos; : aaaamm) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/fct.inc.php" line="287" column="1" bodyfile="includes/fct.inc.php" bodystart="287" bodyend="295"/>
+        <references refid="c__valider_frais_8php_1a8c7bbf374a74bd19d97bfc94d086b456" compoundref="c__valider_frais_8php" startline="15">$lesMois</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="22" refid="fct_8inc_8php_1a80ca5386d53e29b2b310cb83191a9b31" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1a80ca5386d53e29b2b310cb83191a9b31" kindref="member">estConnecte</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>isset($_SESSION[</highlight><highlight class="stringliteral">&apos;idVisiteur&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31" refid="fct_8inc_8php_1a5194a3722b067299a4813f7432ab6c7c" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1a5194a3722b067299a4813f7432ab6c7c" kindref="member">estComptable</ref>()</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(isset($_SESSION[</highlight><highlight class="stringliteral">&apos;comptable&apos;</highlight><highlight class="normal">]))</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$_SESSION[</highlight><highlight class="stringliteral">&apos;comptable&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="fct_8inc_8php_1af3f8f0c3b1455210ffda1ed8b9cb8aff" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1af3f8f0c3b1455210ffda1ed8b9cb8aff" kindref="member">connecter</ref>(<ref refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" kindref="member">$idVisiteur</ref>,<sp/>$nom,<sp/>$prenom,<sp/>$comptable)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>$_SESSION[</highlight><highlight class="stringliteral">&apos;idVisiteur&apos;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" kindref="member">$idVisiteur</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>$_SESSION[</highlight><highlight class="stringliteral">&apos;nom&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$nom;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>$_SESSION[</highlight><highlight class="stringliteral">&apos;prenom&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$prenom;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>$_SESSION[</highlight><highlight class="stringliteral">&apos;comptable&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$comptable;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="fct_8inc_8php_1a4d9cc75d1fa3fa8dc3739f4489183489" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1a4d9cc75d1fa3fa8dc3739f4489183489" kindref="member">deconnecter</ref>()</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>session_destroy();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="fct_8inc_8php_1ab9cb222b5275222fe9adc11dbbd997a3" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1ab9cb222b5275222fe9adc11dbbd997a3" kindref="member">dateFrancaisVersAnglais</ref>($maDate)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>@list($jour,<sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>,<sp/>$annee)<sp/>=<sp/>explode(</highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">,<sp/>$maDate);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>date(</highlight><highlight class="stringliteral">&apos;Y-m-d&apos;</highlight><highlight class="normal">,<sp/>mktime(0,<sp/>0,<sp/>0,<sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>,<sp/>$jour,<sp/>$annee));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="fct_8inc_8php_1a6e0d8dd85362ba68b76db41db62e2499" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1a6e0d8dd85362ba68b76db41db62e2499" kindref="member">dateAnglaisVersFrancais</ref>($maDate)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>@list($annee,<sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>,<sp/>$jour)<sp/>=<sp/>explode(</highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">,<sp/>$maDate);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>$date<sp/>=<sp/>$jour<sp/>.<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal"><sp/>.<sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref><sp/>.<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal"><sp/>.<sp/>$annee;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$date;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="fct_8inc_8php_1ac6b26dbc90d7a5ec71b0585ee0786a41" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1ac6b26dbc90d7a5ec71b0585ee0786a41" kindref="member">getMois</ref>($date)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>@list($jour,<sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>,<sp/>$annee)<sp/>=<sp/>explode(</highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">,<sp/>$date);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>unset($jour);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strlen(<ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>)<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>.<sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$annee<sp/>.<sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>gestion<sp/>des<sp/>erreurs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="fct_8inc_8php_1a5891ac42bd25b5bb5a9427174f8eb15f" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1a5891ac42bd25b5bb5a9427174f8eb15f" kindref="member">estEntierPositif</ref>($valeur)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>preg_match(</highlight><highlight class="stringliteral">&apos;/[^0-9]/&apos;</highlight><highlight class="normal">,<sp/>$valeur)<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="fct_8inc_8php_1a464609600321021614adc67242caff02" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1a464609600321021614adc67242caff02" kindref="member">estTableauEntiers</ref>($tabEntiers)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>$boolReturn<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>($tabEntiers<sp/>as<sp/>$unEntier)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="fct_8inc_8php_1a5891ac42bd25b5bb5a9427174f8eb15f" kindref="member">estEntierPositif</ref>($unEntier))<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$boolReturn<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$boolReturn;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="fct_8inc_8php_1aa58c871e5f6cd7d51b1e8b88843f7fb1" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1aa58c871e5f6cd7d51b1e8b88843f7fb1" kindref="member">estDateDepassee</ref>($dateTestee)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>$dateActuelle<sp/>=<sp/>date(</highlight><highlight class="stringliteral">&apos;d/m/Y&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>@list($jour,<sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref>,<sp/>$annee)<sp/>=<sp/>explode(</highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">,<sp/>$dateActuelle);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>$annee--;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>$anPasse<sp/>=<sp/>$annee<sp/>.<sp/><ref refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" kindref="member">$mois</ref><sp/>.<sp/>$jour;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>@list($jourTeste,<sp/>$moisTeste,<sp/>$anneeTeste)<sp/>=<sp/>explode(</highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">,<sp/>$dateTestee);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>($anneeTeste<sp/>.<sp/>$moisTeste<sp/>.<sp/>$jourTeste<sp/>&lt;<sp/>$anPasse);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="fct_8inc_8php_1a7fa9e2b0f911f71f0dc3857201676f6e" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1a7fa9e2b0f911f71f0dc3857201676f6e" kindref="member">estDateValide</ref>($date)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>$tabDate<sp/>=<sp/>explode(</highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">,<sp/>$date);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>$dateOK<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(count($tabDate)<sp/>!=<sp/>3)<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dateOK<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="fct_8inc_8php_1a464609600321021614adc67242caff02" kindref="member">estTableauEntiers</ref>($tabDate))<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dateOK<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!checkdate($tabDate[1],<sp/>$tabDate[0],<sp/>$tabDate[2]))<sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$dateOK<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$dateOK;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="fct_8inc_8php_1a5eaa55cf65e9070bec3a3966f5294f2a" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1a5eaa55cf65e9070bec3a3966f5294f2a" kindref="member">lesQteFraisValides</ref>($lesFrais)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1a464609600321021614adc67242caff02" kindref="member">estTableauEntiers</ref>($lesFrais);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="fct_8inc_8php_1a38c2c9e2e53aebdd24c6cce15666893f" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1a38c2c9e2e53aebdd24c6cce15666893f" kindref="member">valideInfosFrais</ref>($dateFrais,<sp/>$libelle,<sp/>$montant)</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($dateFrais<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="fct_8inc_8php_1a9ebfa4d6e8d836827ddb02455281e5c1" kindref="member">ajouterErreur</ref>(</highlight><highlight class="stringliteral">&apos;Le<sp/>champ<sp/>date<sp/>ne<sp/>doit<sp/>pas<sp/>être<sp/>vide&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!estDatevalide($dateFrais))<sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="fct_8inc_8php_1a9ebfa4d6e8d836827ddb02455281e5c1" kindref="member">ajouterErreur</ref>(</highlight><highlight class="stringliteral">&apos;Date<sp/>invalide&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="fct_8inc_8php_1aa58c871e5f6cd7d51b1e8b88843f7fb1" kindref="member">estDateDepassee</ref>($dateFrais))<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="fct_8inc_8php_1a9ebfa4d6e8d836827ddb02455281e5c1" kindref="member">ajouterErreur</ref>(</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;date<sp/>d&apos;enregistrement<sp/>du<sp/>frais<sp/>dépassé,<sp/>plus<sp/>de<sp/>1<sp/>an&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($libelle<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="fct_8inc_8php_1a9ebfa4d6e8d836827ddb02455281e5c1" kindref="member">ajouterErreur</ref>(</highlight><highlight class="stringliteral">&apos;Le<sp/>champ<sp/>description<sp/>ne<sp/>peut<sp/>pas<sp/>être<sp/>vide&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($montant<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="fct_8inc_8php_1a9ebfa4d6e8d836827ddb02455281e5c1" kindref="member">ajouterErreur</ref>(</highlight><highlight class="stringliteral">&apos;Le<sp/>champ<sp/>montant<sp/>ne<sp/>peut<sp/>pas<sp/>être<sp/>vide&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>elseif<sp/>(!is_numeric($montant))<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="fct_8inc_8php_1a9ebfa4d6e8d836827ddb02455281e5c1" kindref="member">ajouterErreur</ref>(</highlight><highlight class="stringliteral">&apos;Le<sp/>champ<sp/>montant<sp/>doit<sp/>être<sp/>numérique&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="fct_8inc_8php_1a9ebfa4d6e8d836827ddb02455281e5c1" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1a9ebfa4d6e8d836827ddb02455281e5c1" kindref="member">ajouterErreur</ref>($msg)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!isset($_REQUEST[</highlight><highlight class="stringliteral">&apos;erreurs&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$_REQUEST[</highlight><highlight class="stringliteral">&apos;erreurs&apos;</highlight><highlight class="normal">]<sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>$_REQUEST[</highlight><highlight class="stringliteral">&apos;erreurs&apos;</highlight><highlight class="normal">][]<sp/>=<sp/>$msg;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="261" refid="fct_8inc_8php_1a9e79d79f26d2f6b69e7d342c6afa93b5" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1a9e79d79f26d2f6b69e7d342c6afa93b5" kindref="member">ajouterOperationEffectuee</ref>($msg)</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!isset($_REQUEST[</highlight><highlight class="stringliteral">&apos;operationEffectuee&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$_REQUEST[</highlight><highlight class="stringliteral">&apos;operationEffectuee&apos;</highlight><highlight class="normal">]<sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>$_REQUEST[</highlight><highlight class="stringliteral">&apos;operationEffectuee&apos;</highlight><highlight class="normal">][]<sp/>=<sp/>$msg;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274" refid="fct_8inc_8php_1abc3600d37e9484937ea976542eabec4b" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1abc3600d37e9484937ea976542eabec4b" kindref="member">nbErreurs</ref>()</highlight></codeline>
+<codeline lineno="275"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!isset($_REQUEST[</highlight><highlight class="stringliteral">&apos;erreurs&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>count($_REQUEST[</highlight><highlight class="stringliteral">&apos;erreurs&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="287" refid="fct_8inc_8php_1acdbb5d3a3eff07e658d2d307f2a10dff" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="fct_8inc_8php_1acdbb5d3a3eff07e658d2d307f2a10dff" kindref="member">getLesMois</ref>()</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">($i=0;<sp/>$i&lt;36;<sp/>$i++){</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__valider_frais_8php_1a8c7bbf374a74bd19d97bfc94d086b456" kindref="member">$lesMois</ref>[$i][</highlight><highlight class="stringliteral">&apos;mois&apos;</highlight><highlight class="normal">]=date(</highlight><highlight class="charliteral">&apos;m&apos;</highlight><highlight class="normal">,strtotime(</highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">.$i.</highlight><highlight class="stringliteral">&apos;month&apos;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__valider_frais_8php_1a8c7bbf374a74bd19d97bfc94d086b456" kindref="member">$lesMois</ref>[$i][</highlight><highlight class="stringliteral">&apos;annee&apos;</highlight><highlight class="normal">]=date(</highlight><highlight class="charliteral">&apos;Y&apos;</highlight><highlight class="normal">,strtotime(</highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">.$i.</highlight><highlight class="stringliteral">&apos;month&apos;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="c__valider_frais_8php_1a8c7bbf374a74bd19d97bfc94d086b456" kindref="member">$lesMois</ref>[$i][</highlight><highlight class="stringliteral">&apos;date&apos;</highlight><highlight class="normal">]=date(</highlight><highlight class="stringliteral">&apos;Ym&apos;</highlight><highlight class="normal">,strtotime(</highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">.$i.</highlight><highlight class="stringliteral">&apos;month&apos;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="c__valider_frais_8php_1a8c7bbf374a74bd19d97bfc94d086b456" kindref="member">$lesMois</ref>;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="includes/fct.inc.php"/>
+  </compounddef>
+</doxygen>

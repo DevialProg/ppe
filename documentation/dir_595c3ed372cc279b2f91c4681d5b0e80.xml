@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_595c3ed372cc279b2f91c4681d5b0e80" kind="dir">
+    <compoundname>vues</compoundname>
+    <innerfile refid="v__accueil_8php">v_accueil.php</innerfile>
+    <innerfile refid="v__connexion_8php">v_connexion.php</innerfile>
+    <innerfile refid="v__deconnexion_8php">v_deconnexion.php</innerfile>
+    <innerfile refid="v__entete_8php">v_entete.php</innerfile>
+    <innerfile refid="v__erreurs_8php">v_erreurs.php</innerfile>
+    <innerfile refid="v__etat_frais_8php">v_etatFrais.php</innerfile>
+    <innerfile refid="v__liste_frais_forfait_8php">v_listeFraisForfait.php</innerfile>
+    <innerfile refid="v__liste_frais_hors_forfait_8php">v_listeFraisHorsForfait.php</innerfile>
+    <innerfile refid="v__liste_mois_8php">v_listeMois.php</innerfile>
+    <innerfile refid="v__operation_effectuee_8php">v_operationEffectuee.php</innerfile>
+    <innerfile refid="v__pied_8php">v_pied.php</innerfile>
+    <innerfile refid="v__selectionner_fiche_8php">v_selectionnerFiche.php</innerfile>
+    <innerfile refid="v__valider_frais_8php">v_validerFrais.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vues/"/>
+  </compounddef>
+</doxygen>

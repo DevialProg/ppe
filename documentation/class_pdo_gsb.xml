@@ -1,0 +1,993 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_pdo_gsb" kind="class" language="PHP" prot="public">
+    <compoundname>PdoGsb</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_pdo_gsb_1a7d226690c155d183578e58382672e953" prot="private" static="yes" mutable="no">
+        <type>static</type>
+        <definition>PdoGsb::$serveur</definition>
+        <argsstring></argsstring>
+        <name>$serveur</name>
+        <initializer>= &apos;mysql:host=localhost&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="41" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pdo_gsb_1a9c78c2f623530f916ce205f541de3075" prot="private" static="yes" mutable="no">
+        <type>static</type>
+        <definition>PdoGsb::$bdd</definition>
+        <argsstring></argsstring>
+        <name>$bdd</name>
+        <initializer>= &apos;dbname=gsb_frais&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="42" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pdo_gsb_1a75289eff1cd6ba16226a9189a96eafdc" prot="private" static="yes" mutable="no">
+        <type>static</type>
+        <definition>PdoGsb::$user</definition>
+        <argsstring></argsstring>
+        <name>$user</name>
+        <initializer>= &apos;userGsb&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="43" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pdo_gsb_1afe056e9720ca892afe053a1fa80044f5" prot="private" static="yes" mutable="no">
+        <type>static</type>
+        <definition>PdoGsb::$mdp</definition>
+        <argsstring></argsstring>
+        <name>$mdp</name>
+        <initializer>= &apos;secret&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="44" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pdo_gsb_1a88b27ed1017e8809d4916895da58da3c" prot="private" static="yes" mutable="no">
+        <type>static</type>
+        <definition>PdoGsb::$monPdo</definition>
+        <argsstring></argsstring>
+        <name>$monPdo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="45" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pdo_gsb_1a3ce1b7b414728d8954c9872c0ff6cfb1" prot="private" static="yes" mutable="no">
+        <type>static</type>
+        <definition>PdoGsb::$monPdoGsb</definition>
+        <argsstring></argsstring>
+        <name>$monPdoGsb</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="46" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_pdo_gsb_1a45f09dd4550aee15a8f47a3050f6d14e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::__construct</definition>
+        <argsstring>()</argsstring>
+        <name>__construct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructeur privé, crée l&apos;instance de PDO qui sera sollicitée pour toutes les méthodes de la classe </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="52" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="52" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pdo_gsb_1a434c6bd634f9de65d72dcf84ece0e0f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::__destruct</definition>
+        <argsstring>()</argsstring>
+        <name>__destruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Méthode destructeur appelée dès qu&apos;il n&apos;y a plus de référence sur un objet donné, ou dans n&apos;importe quel ordre pendant la séquence d&apos;arrêt. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="63" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1a1182f8d30c3e4c08fa45d8437ffbb3a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::getInfosVisiteur</definition>
+        <argsstring>($login, $mdp)</argsstring>
+        <name>getInfosVisiteur</name>
+        <param>
+          <declname>$login</declname>
+        </param>
+        <param>
+          <declname>$mdp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retourne les informations d&apos;un visiteur</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$login</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Login du visiteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$mdp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mot de passe du visiteur</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>l&apos;id, le nom et le prénom sous la forme d&apos;un tableau associatif </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="88" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="88" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1a9d2a67f6be7cdda306b94c39703757eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::getLesFraisHorsForfait</definition>
+        <argsstring>($idVisiteur, $mois)</argsstring>
+        <name>getLesFraisHorsForfait</name>
+        <param>
+          <declname>$idVisiteur</declname>
+        </param>
+        <param>
+          <declname>$mois</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retourne sous forme d&apos;un tableau associatif toutes les lignes de frais hors forfait concernées par les deux arguments. La boucle foreach ne peut être utilisée ici car on procède à une modification de la structure itérée - transformation du champ date-</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idVisiteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du visiteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$mois</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mois sous la forme aaaamm</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>tous les champs des lignes de frais hors forfait sous la forme d&apos;un tableau associatif </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="113" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="113" bodyend="128"/>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+        <references refid="fct_8inc_8php_1a6e0d8dd85362ba68b76db41db62e2499" compoundref="fct_8inc_8php" startline="93" endline="98">dateAnglaisVersFrancais</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1a85ec3a9cd4d229b01aa6ff58d0bca001" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::getNbjustificatifs</definition>
+        <argsstring>($idVisiteur, $mois)</argsstring>
+        <name>getNbjustificatifs</name>
+        <param>
+          <declname>$idVisiteur</declname>
+        </param>
+        <param>
+          <declname>$mois</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retourne le nombre de justificatif d&apos;un visiteur pour un mois donné</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idVisiteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du visiteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$mois</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mois sous la forme aaaamm</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>le nombre entier de justificatifs </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="138" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="138" bodyend="149"/>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1aabb95308e17c30ecaed0c097dd1ebde8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::getLesFraisForfait</definition>
+        <argsstring>($idVisiteur, $mois)</argsstring>
+        <name>getLesFraisForfait</name>
+        <param>
+          <declname>$idVisiteur</declname>
+        </param>
+        <param>
+          <declname>$mois</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retourne sous forme d&apos;un tableau associatif toutes les lignes de frais au forfait concernées par les deux arguments</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idVisiteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du visiteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$mois</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mois sous la forme aaaamm</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>l&apos;id, le libelle et la quantité sous la forme d&apos;un tableau associatif </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="161" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="161" bodyend="177"/>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1af1532e4e39dddaa75b7b20813cc85c28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::getLesIdFrais</definition>
+        <argsstring>()</argsstring>
+        <name>getLesIdFrais</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retourne tous les id de la table FraisForfait</para>
+<para><simplesect kind="return"><para>un tableau associatif </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="184" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="184" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1a6ca0b28cac4f0ca235f962209656d1fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::majFraisForfait</definition>
+        <argsstring>($idVisiteur, $mois, $lesFrais)</argsstring>
+        <name>majFraisForfait</name>
+        <param>
+          <declname>$idVisiteur</declname>
+        </param>
+        <param>
+          <declname>$mois</declname>
+        </param>
+        <param>
+          <declname>$lesFrais</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Met à jour la table ligneFraisForfait Met à jour la table ligneFraisForfait pour un visiteur et un mois donné en enregistrant les nouveaux montants</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idVisiteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du visiteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$mois</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mois sous la forme aaaamm </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>Array</parametertype>
+<parametername>$lesFrais</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tableau associatif de clé idFrais et de valeur la quantité pour ce frais</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="205" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="205" bodyend="222"/>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1a6ad333540f1363e77268c24fd212a2e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::majNbJustificatifs</definition>
+        <argsstring>($idVisiteur, $mois, $nbJustificatifs)</argsstring>
+        <name>majNbJustificatifs</name>
+        <param>
+          <declname>$idVisiteur</declname>
+        </param>
+        <param>
+          <declname>$mois</declname>
+        </param>
+        <param>
+          <declname>$nbJustificatifs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Met à jour le nombre de justificatifs de la table ficheFrais pour le mois et le visiteur concerné</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idVisiteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du visiteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$mois</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mois sous la forme aaaamm </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>Integer</parametertype>
+<parametername>$nbJustificatifs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de justificatifs</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="234" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="234" bodyend="247"/>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1acb34285b17ec13b0e7459f5c111f6d1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::estPremierFraisMois</definition>
+        <argsstring>($idVisiteur, $mois)</argsstring>
+        <name>estPremierFraisMois</name>
+        <param>
+          <declname>$idVisiteur</declname>
+        </param>
+        <param>
+          <declname>$mois</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Teste si un visiteur possède une fiche de frais pour le mois passé en argument</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idVisiteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du visiteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$mois</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mois sous la forme aaaamm</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vrai ou faux </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="257" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="257" bodyend="271"/>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1a6a881f23f5e182ef89984fbcb2b11c0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::dernierMoisSaisi</definition>
+        <argsstring>($idVisiteur)</argsstring>
+        <name>dernierMoisSaisi</name>
+        <param>
+          <declname>$idVisiteur</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retourne le dernier mois en cours d&apos;un visiteur</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idVisiteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du visiteur</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>le mois sous la forme aaaamm </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="280" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="280" bodyend="291"/>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1a04c4fd3685d2e88950b1ff3ad8faf5a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::creeNouvellesLignesFrais</definition>
+        <argsstring>($idVisiteur, $mois)</argsstring>
+        <name>creeNouvellesLignesFrais</name>
+        <param>
+          <declname>$idVisiteur</declname>
+        </param>
+        <param>
+          <declname>$mois</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Crée une nouvelle fiche de frais et les lignes de frais au forfait pour un visiteur et un mois donnés</para>
+<para>Récupère le dernier mois en cours de traitement, met à &apos;CL&apos; son champs idEtat, crée une nouvelle fiche de frais avec un idEtat à &apos;CR&apos; et crée les lignes de frais forfait de quantités nulles</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idVisiteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du visiteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$mois</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mois sous la forme aaaamm</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="306" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="306" bodyend="334"/>
+        <references refid="class_pdo_gsb_1a6a881f23f5e182ef89984fbcb2b11c0d" compoundref="class_8pdogsb_8inc_8php" startline="280" endline="291">dernierMoisSaisi</references>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+        <references refid="class_pdo_gsb_1a9c6ca5dccbd8fb81e24e8df9df698d41" compoundref="class_8pdogsb_8inc_8php" startline="514" endline="531">getLesInfosFicheFrais</references>
+        <references refid="class_pdo_gsb_1ae5e32ce4e68a5e82110a2b44150ca890" compoundref="class_8pdogsb_8inc_8php" startline="543" endline="554">majEtatFicheFrais</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+        <references refid="class_pdo_gsb_1af1532e4e39dddaa75b7b20813cc85c28" compoundref="class_8pdogsb_8inc_8php" startline="184" endline="191">getLesIdFrais</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1ae8b424c96cf6dec43c15df6416aa03ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::creeNouveauFraisHorsForfait</definition>
+        <argsstring>( $idVisiteur, $mois, $libelle, $date, $montant)</argsstring>
+        <name>creeNouveauFraisHorsForfait</name>
+        <param>
+          <declname>$idVisiteur</declname>
+        </param>
+        <param>
+          <declname>$mois</declname>
+        </param>
+        <param>
+          <declname>$libelle</declname>
+        </param>
+        <param>
+          <declname>$date</declname>
+        </param>
+        <param>
+          <declname>$montant</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Crée un nouveau frais hors forfait pour un visiteur un mois donné à partir des informations fournies en paramètre</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idVisiteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du visiteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$mois</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mois sous la forme aaaamm </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$libelle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Libellé du frais </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$date</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Date du frais au format français jj//mm/aaaa </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>Float</parametertype>
+<parametername>$montant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Montant du frais</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="348" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="348" bodyend="363"/>
+        <references refid="fct_8inc_8php_1ab9cb222b5275222fe9adc11dbbd997a3" compoundref="fct_8inc_8php" startline="79" endline="83">dateFrancaisVersAnglais</references>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1a7e4ba1c68927d74f96178c70d78e69a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::supprimerFraisHorsForfait</definition>
+        <argsstring>($idFrais)</argsstring>
+        <name>supprimerFraisHorsForfait</name>
+        <param>
+          <declname>$idFrais</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Supprime le frais hors forfait dont l&apos;id est passé en argument</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idFrais</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du frais</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="372" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="372" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1aa7e48fb175bb29a721ec10a3d2a9ef4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::rejeterFraisHorsForfait</definition>
+        <argsstring>($idFrais)</argsstring>
+        <name>rejeterFraisHorsForfait</name>
+        <param>
+          <declname>$idFrais</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indique que le frais hors forfait dont l&apos;id est passé en argument est rejeté (ajout au libellé)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idFrais</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du frais</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="388" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="388" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1a6ed22ab5dcf7b3ace9d2065d60250615" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::reporterFraisHorsForfait</definition>
+        <argsstring>($idFrais)</argsstring>
+        <name>reporterFraisHorsForfait</name>
+        <param>
+          <declname>$idFrais</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indique que le frais hors forfait dont l&apos;id est passé en argument est rejeté (ajout au libellé)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idFrais</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du frais</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="421" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="421" bodyend="448"/>
+        <references refid="class_pdo_gsb_1ac4a1afa85e7d7b983316c70c58302069" compoundref="class_8pdogsb_8inc_8php" startline="450" endline="472">getMoisSuivantFraisHF</references>
+        <references refid="fct_8inc_8php_1a9ebfa4d6e8d836827ddb02455281e5c1" compoundref="fct_8inc_8php" startline="247" endline="253">ajouterErreur</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1ac4a1afa85e7d7b983316c70c58302069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::getMoisSuivantFraisHF</definition>
+        <argsstring>($idFrais)</argsstring>
+        <name>getMoisSuivantFraisHF</name>
+        <param>
+          <declname>$idFrais</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="450" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="450" bodyend="472"/>
+        <references refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" compoundref="c__gerer_frais_8php" startline="19">$numAnnee</references>
+        <references refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" compoundref="c__gerer_frais_8php" startline="20">$numMois</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1aaa5986cf60a2912297d4d1f4f1a462e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::getLesMoisDisponibles</definition>
+        <argsstring>($idVisiteur)</argsstring>
+        <name>getLesMoisDisponibles</name>
+        <param>
+          <declname>$idVisiteur</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retourne les mois pour lesquel un visiteur a une fiche de frais</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idVisiteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du visiteur</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>un tableau associatif de clé un mois -aaaamm- et de valeurs l&apos;année et le mois correspondant </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="482" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="482" bodyend="502"/>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+        <references refid="c__valider_frais_8php_1a8c7bbf374a74bd19d97bfc94d086b456" compoundref="c__valider_frais_8php" startline="15">$lesMois</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+        <references refid="c__gerer_frais_8php_1a21260be3fef816c4fd65c88632805608" compoundref="c__gerer_frais_8php" startline="19">$numAnnee</references>
+        <references refid="c__gerer_frais_8php_1a492eee9291ffecde802027790eb8b37d" compoundref="c__gerer_frais_8php" startline="20">$numMois</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1a9c6ca5dccbd8fb81e24e8df9df698d41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::getLesInfosFicheFrais</definition>
+        <argsstring>($idVisiteur, $mois)</argsstring>
+        <name>getLesInfosFicheFrais</name>
+        <param>
+          <declname>$idVisiteur</declname>
+        </param>
+        <param>
+          <declname>$mois</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retourne les informations d&apos;une fiche de frais d&apos;un visiteur pour un mois donné</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idVisiteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du visiteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$mois</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mois sous la forme aaaamm</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>un tableau avec des champs de jointure entre une fiche de frais et la ligne d&apos;état </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="514" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="514" bodyend="531"/>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1ae5e32ce4e68a5e82110a2b44150ca890" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::majEtatFicheFrais</definition>
+        <argsstring>($idVisiteur, $mois, $etat)</argsstring>
+        <name>majEtatFicheFrais</name>
+        <param>
+          <declname>$idVisiteur</declname>
+        </param>
+        <param>
+          <declname>$mois</declname>
+        </param>
+        <param>
+          <declname>$etat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modifie l&apos;état et la date de modification d&apos;une fiche de frais. Modifie le champ idEtat et met la date de modif à aujourd&apos;hui.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idVisiteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du visiteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$mois</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mois sous la forme aaaamm </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$etat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nouvel état de la fiche de frais</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="543" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="543" bodyend="554"/>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1aebc178efe964311b6b241befd2dadaee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::getLesVisiteurs</definition>
+        <argsstring>()</argsstring>
+        <name>getLesVisiteurs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retourne l&apos;ensemble des visiteurs (id nom et prénom)</para>
+<para><simplesect kind="return"><para>l&apos;id, le nom et le prénom sous la forme d&apos;un tableau associatif </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="561" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="561" bodyend="570"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pdo_gsb_1a82bf10c0d38b6a2fca9e2c7b8dd81c81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PdoGsb::existeFicheFrais</definition>
+        <argsstring>($idVisiteur, $mois)</argsstring>
+        <name>existeFicheFrais</name>
+        <param>
+          <declname>$idVisiteur</declname>
+        </param>
+        <param>
+          <declname>$mois</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>indique si une fiche de frais existe</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$idVisiteur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID du visiteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>String</parametertype>
+<parametername>$mois</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mois sous la forme aaaamm</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean vrai si la fiche existe, faux sinon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="580" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="580" bodyend="592"/>
+        <references refid="c__etat_frais_8php_1a06480cb765d32df12f67a3589b6b9507" compoundref="c__etat_frais_8php" startline="18">$idVisiteur</references>
+        <references refid="c__gerer_frais_8php_1ac3dd350c90be7c45f992a6efde984c66" compoundref="c__gerer_frais_8php" startline="18">$mois</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_pdo_gsb_1a0d5539c1b7384afdf9040c2a7cda88b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>static</type>
+        <definition>static PdoGsb::getPdoGsb</definition>
+        <argsstring>()</argsstring>
+        <name>getPdoGsb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fonction statique qui crée l&apos;unique instance de la classe Appel : $instancePdoGsb = <ref refid="class_pdo_gsb_1a0d5539c1b7384afdf9040c2a7cda88b5" kindref="member">PdoGsb::getPdoGsb()</ref>;</para>
+<para><simplesect kind="return"><para>l&apos;unique objet de la classe <ref refid="class_pdo_gsb" kindref="compound">PdoGsb</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/class.pdogsb.inc.php" line="73" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="73" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="includes/class.pdogsb.inc.php" line="39" column="1" bodyfile="includes/class.pdogsb.inc.php" bodystart="39" bodyend="594"/>
+    <listofallmembers>
+      <member refid="class_pdo_gsb_1a9c78c2f623530f916ce205f541de3075" prot="private" virt="non-virtual"><scope>PdoGsb</scope><name>$bdd</name></member>
+      <member refid="class_pdo_gsb_1afe056e9720ca892afe053a1fa80044f5" prot="private" virt="non-virtual"><scope>PdoGsb</scope><name>$mdp</name></member>
+      <member refid="class_pdo_gsb_1a88b27ed1017e8809d4916895da58da3c" prot="private" virt="non-virtual"><scope>PdoGsb</scope><name>$monPdo</name></member>
+      <member refid="class_pdo_gsb_1a3ce1b7b414728d8954c9872c0ff6cfb1" prot="private" virt="non-virtual"><scope>PdoGsb</scope><name>$monPdoGsb</name></member>
+      <member refid="class_pdo_gsb_1a7d226690c155d183578e58382672e953" prot="private" virt="non-virtual"><scope>PdoGsb</scope><name>$serveur</name></member>
+      <member refid="class_pdo_gsb_1a75289eff1cd6ba16226a9189a96eafdc" prot="private" virt="non-virtual"><scope>PdoGsb</scope><name>$user</name></member>
+      <member refid="class_pdo_gsb_1a45f09dd4550aee15a8f47a3050f6d14e" prot="private" virt="non-virtual"><scope>PdoGsb</scope><name>__construct</name></member>
+      <member refid="class_pdo_gsb_1a434c6bd634f9de65d72dcf84ece0e0f6" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>__destruct</name></member>
+      <member refid="class_pdo_gsb_1ae8b424c96cf6dec43c15df6416aa03ac" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>creeNouveauFraisHorsForfait</name></member>
+      <member refid="class_pdo_gsb_1a04c4fd3685d2e88950b1ff3ad8faf5a7" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>creeNouvellesLignesFrais</name></member>
+      <member refid="class_pdo_gsb_1a6a881f23f5e182ef89984fbcb2b11c0d" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>dernierMoisSaisi</name></member>
+      <member refid="class_pdo_gsb_1acb34285b17ec13b0e7459f5c111f6d1c" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>estPremierFraisMois</name></member>
+      <member refid="class_pdo_gsb_1a82bf10c0d38b6a2fca9e2c7b8dd81c81" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>existeFicheFrais</name></member>
+      <member refid="class_pdo_gsb_1a1182f8d30c3e4c08fa45d8437ffbb3a2" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>getInfosVisiteur</name></member>
+      <member refid="class_pdo_gsb_1aabb95308e17c30ecaed0c097dd1ebde8" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>getLesFraisForfait</name></member>
+      <member refid="class_pdo_gsb_1a9d2a67f6be7cdda306b94c39703757eb" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>getLesFraisHorsForfait</name></member>
+      <member refid="class_pdo_gsb_1af1532e4e39dddaa75b7b20813cc85c28" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>getLesIdFrais</name></member>
+      <member refid="class_pdo_gsb_1a9c6ca5dccbd8fb81e24e8df9df698d41" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>getLesInfosFicheFrais</name></member>
+      <member refid="class_pdo_gsb_1aaa5986cf60a2912297d4d1f4f1a462e4" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>getLesMoisDisponibles</name></member>
+      <member refid="class_pdo_gsb_1aebc178efe964311b6b241befd2dadaee" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>getLesVisiteurs</name></member>
+      <member refid="class_pdo_gsb_1ac4a1afa85e7d7b983316c70c58302069" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>getMoisSuivantFraisHF</name></member>
+      <member refid="class_pdo_gsb_1a85ec3a9cd4d229b01aa6ff58d0bca001" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>getNbjustificatifs</name></member>
+      <member refid="class_pdo_gsb_1a0d5539c1b7384afdf9040c2a7cda88b5" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>getPdoGsb</name></member>
+      <member refid="class_pdo_gsb_1ae5e32ce4e68a5e82110a2b44150ca890" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>majEtatFicheFrais</name></member>
+      <member refid="class_pdo_gsb_1a6ca0b28cac4f0ca235f962209656d1fc" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>majFraisForfait</name></member>
+      <member refid="class_pdo_gsb_1a6ad333540f1363e77268c24fd212a2e1" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>majNbJustificatifs</name></member>
+      <member refid="class_pdo_gsb_1aa7e48fb175bb29a721ec10a3d2a9ef4c" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>rejeterFraisHorsForfait</name></member>
+      <member refid="class_pdo_gsb_1a6ed22ab5dcf7b3ace9d2065d60250615" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>reporterFraisHorsForfait</name></member>
+      <member refid="class_pdo_gsb_1a7e4ba1c68927d74f96178c70d78e69a8" prot="public" virt="non-virtual"><scope>PdoGsb</scope><name>supprimerFraisHorsForfait</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

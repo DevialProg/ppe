@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="c__connexion_8php" kind="file" language="PHP">
+    <compoundname>c_connexion.php</compoundname>
+    <innernamespace refid="namespace_g_s_b">GSB</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="c__connexion_8php_1aa698a3e72116e8e778be0e95d908ee30" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$action</definition>
+        <argsstring></argsstring>
+        <name>$action</name>
+        <initializer>= filter_input(INPUT_GET, &apos;action&apos;, FILTER_SANITIZE_STRING)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="controleurs/c_connexion.php" line="17" column="1" bodyfile="controleurs/c_connexion.php" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="17" refid="c__connexion_8php_1aa698a3e72116e8e778be0e95d908ee30" refkind="member"><highlight class="normal"><ref refid="c__connexion_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref><sp/>=<sp/>filter_input(INPUT_GET,<sp/></highlight><highlight class="stringliteral">&apos;action&apos;</highlight><highlight class="normal">,<sp/>FILTER_SANITIZE_STRING);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="index_8php_1a7c9b7c7c53cda79aedbcb1ae04bcea1b" kindref="member">$uc</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="index_8php_1a7c9b7c7c53cda79aedbcb1ae04bcea1b" kindref="member">$uc</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;demandeconnexion&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="c__connexion_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;demandeConnexion&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;vues/v_connexion.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;valideConnexion&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>$login<sp/>=<sp/>filter_input(INPUT_POST,<sp/></highlight><highlight class="stringliteral">&apos;login&apos;</highlight><highlight class="normal">,<sp/>FILTER_SANITIZE_STRING);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>$mdp<sp/>=<sp/>filter_input(INPUT_POST,<sp/></highlight><highlight class="stringliteral">&apos;mdp&apos;</highlight><highlight class="normal">,<sp/>FILTER_SANITIZE_STRING);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>$visiteur<sp/>=<sp/><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref>-&gt;getInfosVisiteur($login,<sp/>$mdp);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!is_array($visiteur))<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="fct_8inc_8php_1a9ebfa4d6e8d836827ddb02455281e5c1" kindref="member">ajouterErreur</ref>(</highlight><highlight class="stringliteral">&apos;Login<sp/>ou<sp/>mot<sp/>de<sp/>passe<sp/>incorrect&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;vues/v_erreurs.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;vues/v_connexion.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$id<sp/>=<sp/>$visiteur[</highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$nom<sp/>=<sp/>$visiteur[</highlight><highlight class="stringliteral">&apos;nom&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$prenom<sp/>=<sp/>$visiteur[</highlight><highlight class="stringliteral">&apos;prenom&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$comptable<sp/>=<sp/>$visiteur[</highlight><highlight class="stringliteral">&apos;comptable&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="fct_8inc_8php_1af3f8f0c3b1455210ffda1ed8b9cb8aff" kindref="member">connecter</ref>($id,<sp/>$nom,<sp/>$prenom,$comptable);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="index_8php_1a558035152fd00c2d5543061c6d4703bc" kindref="member">$estComptable</ref><sp/>=<sp/><ref refid="fct_8inc_8php_1a5194a3722b067299a4813f7432ab6c7c" kindref="member">estComptable</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>header(</highlight><highlight class="stringliteral">&apos;Location:<sp/>index.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;vues/v_connexion.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="controleurs/c_connexion.php"/>
+  </compounddef>
+</doxygen>

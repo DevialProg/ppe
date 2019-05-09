@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="index_8php" kind="file" language="PHP">
+    <compoundname>index.php</compoundname>
+    <innernamespace refid="namespace_g_s_b">GSB</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$pdo</definition>
+        <argsstring></argsstring>
+        <name>$pdo</name>
+        <initializer>= <ref refid="class_pdo_gsb_1a0d5539c1b7384afdf9040c2a7cda88b5" kindref="member">PdoGsb::getPdoGsb</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="index.php" line="20" column="1" bodyfile="index.php" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="index_8php_1af0f433921c4625f043de9faebb5b7bbe" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$estConnecte</definition>
+        <argsstring></argsstring>
+        <name>$estConnecte</name>
+        <initializer>= <ref refid="fct_8inc_8php_1a80ca5386d53e29b2b310cb83191a9b31" kindref="member">estConnecte</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="index.php" line="21" column="1" bodyfile="index.php" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="index_8php_1a558035152fd00c2d5543061c6d4703bc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$estComptable</definition>
+        <argsstring></argsstring>
+        <name>$estComptable</name>
+        <initializer>= <ref refid="fct_8inc_8php_1a5194a3722b067299a4813f7432ab6c7c" kindref="member">estComptable</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="index.php" line="22" column="1" bodyfile="index.php" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="index_8php_1a7c9b7c7c53cda79aedbcb1ae04bcea1b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$uc</definition>
+        <argsstring></argsstring>
+        <name>$uc</name>
+        <initializer>= filter_input(INPUT_GET, &apos;uc&apos;, FILTER_SANITIZE_STRING)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="index.php" line="24" column="1" bodyfile="index.php" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="index_8php_1af4c9c6a8db40ee5d017a82c4bab17819" prot="public" static="no" mutable="no">
+        <type>if($uc &amp;&amp;! $<ref refid="fct_8inc_8php_1a80ca5386d53e29b2b310cb83191a9b31" kindref="member">estConnecte</ref>) elseif(empty($uc))</type>
+        <definition>if ( $uc &amp;&amp;! $estConnecte) elseif (empty( $uc)) switch($uc)</definition>
+        <argsstring>( $uc)</argsstring>
+        <name>switch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="index.php" line="30" column="1" bodyfile="index.php" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">require_once<sp/></highlight><highlight class="stringliteral">&apos;includes/fct.inc.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">require_once<sp/></highlight><highlight class="stringliteral">&apos;includes/class.pdogsb.inc.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">session_start();</highlight></codeline>
+<codeline lineno="20" refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" refkind="member"><highlight class="normal"><ref refid="index_8php_1a5766efd703cef0e00bfc06b3f3acbe0e" kindref="member">$pdo</ref><sp/>=<sp/><ref refid="class_pdo_gsb_1a0d5539c1b7384afdf9040c2a7cda88b5" kindref="member">PdoGsb::getPdoGsb</ref>();</highlight></codeline>
+<codeline lineno="21" refid="index_8php_1af0f433921c4625f043de9faebb5b7bbe" refkind="member"><highlight class="normal"><ref refid="index_8php_1af0f433921c4625f043de9faebb5b7bbe" kindref="member">$estConnecte</ref><sp/>=<sp/><ref refid="fct_8inc_8php_1a80ca5386d53e29b2b310cb83191a9b31" kindref="member">estConnecte</ref>();</highlight></codeline>
+<codeline lineno="22" refid="index_8php_1a558035152fd00c2d5543061c6d4703bc" refkind="member"><highlight class="normal"><ref refid="index_8php_1a558035152fd00c2d5543061c6d4703bc" kindref="member">$estComptable</ref><sp/>=<sp/><ref refid="fct_8inc_8php_1a5194a3722b067299a4813f7432ab6c7c" kindref="member">estComptable</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">require<sp/></highlight><highlight class="stringliteral">&apos;vues/v_entete.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24" refid="index_8php_1a7c9b7c7c53cda79aedbcb1ae04bcea1b" refkind="member"><highlight class="normal"><ref refid="index_8php_1a7c9b7c7c53cda79aedbcb1ae04bcea1b" kindref="member">$uc</ref><sp/>=<sp/>filter_input(INPUT_GET,<sp/></highlight><highlight class="stringliteral">&apos;uc&apos;</highlight><highlight class="normal">,<sp/>FILTER_SANITIZE_STRING);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="index_8php_1a7c9b7c7c53cda79aedbcb1ae04bcea1b" kindref="member">$uc</ref><sp/>&amp;&amp;<sp/>!<ref refid="index_8php_1af0f433921c4625f043de9faebb5b7bbe" kindref="member">$estConnecte</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="index_8php_1a7c9b7c7c53cda79aedbcb1ae04bcea1b" kindref="member">$uc</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;connexion&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}<sp/>elseif<sp/>(empty(<ref refid="index_8php_1a7c9b7c7c53cda79aedbcb1ae04bcea1b" kindref="member">$uc</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="index_8php_1a7c9b7c7c53cda79aedbcb1ae04bcea1b" kindref="member">$uc</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;accueil&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30" refid="index_8php_1af4c9c6a8db40ee5d017a82c4bab17819" refkind="member"><highlight class="normal"></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="index_8php_1a7c9b7c7c53cda79aedbcb1ae04bcea1b" kindref="member">$uc</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;connexion&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;controleurs/c_connexion.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;accueil&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;controleurs/c_accueil.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;gererFrais&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;controleurs/c_gererFrais.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;etatFrais&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;controleurs/c_etatFrais.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;validerFrais&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;controleurs/c_validerFrais.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;deconnexion&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;controleurs/c_deconnexion.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">require<sp/></highlight><highlight class="stringliteral">&apos;vues/v_pied.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+    </programlisting>
+    <location file="index.php"/>
+  </compounddef>
+</doxygen>
