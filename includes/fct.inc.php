@@ -23,6 +23,22 @@ function estConnecte()
 {
     return isset($_SESSION['idVisiteur']);
 }
+/**
+ * Indique si le visiteur connecté est un comptable ou non
+ * 
+ * @return boolean vrai si un utilisateur est connecté et est comptable faux sinon
+ */
+function estComptable()
+{
+    if(isset($_SESSION['comptable']))
+    {
+        return $_SESSION['comptable'];
+    }
+    else
+    {
+        return FALSE;
+    }
+}
 
 /**
  * Enregistre dans une variable session les infos d'un visiteur
@@ -30,14 +46,16 @@ function estConnecte()
  * @param String $idVisiteur ID du visiteur
  * @param String $nom        Nom du visiteur
  * @param String $prenom     Prénom du visiteur
+ * @param Boolean $comptable indique si l'utilisateur est un comptable ou non
  *
  * @return null
  */
-function connecter($idVisiteur, $nom, $prenom)
+function connecter($idVisiteur, $nom, $prenom, $comptable)
 {
     $_SESSION['idVisiteur'] = $idVisiteur;
     $_SESSION['nom'] = $nom;
     $_SESSION['prenom'] = $prenom;
+    $_SESSION['comptable'] = $comptable;
 }
 
 /**
@@ -233,6 +251,20 @@ function ajouterErreur($msg)
     }
     $_REQUEST['erreurs'][] = $msg;
 }
+/**
+ * Ajoute le libellé d'une opération réussie au tableau des opérations effectuées
+ *
+ * @param String $msg Libellé de l'erreur
+ *
+ * @return null
+ */
+function ajouterOperationEffectuee($msg)
+{
+    if (!isset($_REQUEST['operationEffectuee'])) {
+        $_REQUEST['operationEffectuee'] = array();
+    }
+    $_REQUEST['operationEffectuee'][] = $msg;
+}
 
 /**
  * Retoune le nombre de lignes du tableau des erreurs
@@ -246,4 +278,18 @@ function nbErreurs()
     } else {
         return count($_REQUEST['erreurs']);
     }
+}
+/**
+ * Retourne la liste des mois des 3 dernières années
+ * 
+ * @return  la liste des mois de 3 dernières années ('mois' : mm , 'annee' : aaaa , 'date' : aaaamm)
+ */
+function getLesMois()
+{
+    for($i=0; $i<36; $i++){
+        $lesMois[$i]['mois']=date('m',strtotime('-'.$i.'month'));
+        $lesMois[$i]['annee']=date('Y',strtotime('-'.$i.'month'));
+        $lesMois[$i]['date']=date('Ym',strtotime('-'.$i.'month'));
+    }
+    return $lesMois;
 }
